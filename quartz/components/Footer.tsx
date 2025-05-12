@@ -13,9 +13,9 @@ export default ((opts?: Options) => {
     const links = opts?.links ?? []
     return (
       <footer class={`${displayClass ?? ""}`}>
+        <hr />
         <p>
-          {i18n(cfg.locale).components.footer.createdWith}{" "}
-          <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
+          Contact me at <a href="mailto:pthodima+notes@gmail.com">pthodima@gmail.com</a>
         </p>
         <ul>
           {Object.entries(links).map(([text, link]) => (
