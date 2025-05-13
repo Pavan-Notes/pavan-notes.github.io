@@ -16,13 +16,13 @@ export default ((opts?: Options) => {
         <p>
           Contact me at <a href="mailto:pthodima+notes@gmail.com">pthodima@gmail.com</a>
         </p>
-        {/* <ul> */}
-        {/*   {Object.entries(links).map(([text, link]) => ( */}
-        {/*     <li> */}
-        {/*       <a href={link}>{text}</a> */}
-        {/*     </li> */}
-        {/*   ))} */}
-        {/* </ul> */}
+        <ul>
+          {Object.entries(links).map(([text, link]) => (
+            <li>
+              <a href={link}>{text}</a>
+            </li>
+          ))}
+        </ul>
       </footer>
     )
   }

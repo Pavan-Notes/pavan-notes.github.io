@@ -1,3 +1,77 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+//@use "../../content/.obsidian/snippets/custom.scss"
+
+.home-hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.home-hero img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.home-hero h1 {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+}
+.home-hero p {
+  margin: 0;
+  color: var(--text-faint);
+}
+
+/* Featured projects grid */
+.home-featured {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.home-featured .card {
+  padding: 1rem;
+  background: var(--background-modifier-box);
+  border: 2px solid var(--dark);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+.home-featured .card:hover {
+  transform: translateY(-4px);
+}
+/* Recent posts list */
+.home-recent {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+.home-recent li + li {
+  margin-top: 0.75rem;
+}
+.home-recent a {
+  text-decoration: none;
+  font-weight: 500;
+}
+.home-recent .date {
+  font-size: 0.875rem;
+  color: var(--text-faint);
+}
+
+/* Tag cloud */
+.home-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+.home-tags a {
+  background: var(--accent);
+  color: var(--text-on-accent);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
