@@ -1,6 +1,5 @@
 ---
 title: "Pavan Thodima"
-permalink: "/"
 description: "Master’s student in Computer Science at UW-Madison focused on AI/ML, event-based vision, and deep learning."
 tags:
   - Web-Development
